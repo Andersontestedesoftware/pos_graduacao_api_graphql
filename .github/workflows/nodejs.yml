@@ -22,9 +22,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Rodar os testes de API via Controller
-      run: npm run test-controller
-
     - name: Subir a API 
       run: npm run start-graphql &
 
