@@ -17,7 +17,7 @@ module.exports = {
     },
     loginUser: (parent, { username, password }) => {
       const user = userService.loginUser({ username, password });
-      const token = jwt.sign({ username: user.username }, SECRET, { expiresIn: '1h' });
+      const token = jwt.sign({ username: user.username }, SECRET, { expiresIn: '365h' });
       return { token, user };
     },
     createTransfer: (parent, { from, to, value }, context) => {

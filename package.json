@@ -7,6 +7,7 @@
     "test": "mocha 'test/**/*.test.js' --timeout 10000 --reporter mochawesome",
     "test-external": "mocha 'test/external/**/*.test.js' --timeout 10000 --reporter mochawesome",
     "test-controller": "mocha 'test/controller/**/*.test.js' --timeout 10000 --reporter mochawesome",
+    "test-trabalho": "mocha test/external/trabalhoextra.test.js --timeout 10000 --reporter mochawesome",
     "start": "node server.js",
     "start-graphql": "node graphql/server.js"
   },
