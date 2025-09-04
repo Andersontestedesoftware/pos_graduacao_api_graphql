@@ -21,7 +21,7 @@ before(async () => {
     .post('')
     .send({
       query: `
-        mutation LoginUser($username: String!, $password: String!) {
+        mutation Login_sucesso($username: String!, $password: String!) {
           loginUser(username: $username, password: $password) {
             token
           }
